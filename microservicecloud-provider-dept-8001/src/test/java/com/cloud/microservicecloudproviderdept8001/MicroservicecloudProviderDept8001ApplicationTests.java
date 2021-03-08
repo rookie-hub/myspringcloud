@@ -13,6 +13,8 @@ class MicroservicecloudProviderDept8001ApplicationTests {
     @Autowired
     DataSource dataSource;
 
+    @Autowired
+    DeptMapper deptmapper;
     @Test
     void contextLoads() {
         log.info("数据源的类型: "+dataSource.getClass());
