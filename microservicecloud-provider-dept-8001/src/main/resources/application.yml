@@ -1,3 +1,6 @@
+server:
+  port: 8001
+
 spring:
   application:
     name: micro-dept # 对外暴露的微服务名称
@@ -14,3 +17,7 @@ spring:
     host: 127.0.0.1
     port: 6379
     password: 123456
+
+#mybatis-plus:
+#  configuration:
+#    map-underscore-to-camel-case: false # 关闭自动驼峰式命名
