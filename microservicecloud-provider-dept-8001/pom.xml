@@ -66,8 +66,16 @@
             <artifactId>microservicecloud-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <!-- 将微服务provider侧注册进eureka -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-netflix-eureka-client</artifactId>
+            <version>3.0.1</version>
+            <scope>compile</scope>
+        </dependency>
 
     </dependencies>
+
 
     <build>
         <plugins>

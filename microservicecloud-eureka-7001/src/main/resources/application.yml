@@ -6,5 +6,5 @@ eureka:
   client:
     register-with-eureka: false # 不向注册中心注册自己
     fetch-registry: false # 是否在本地缓存注册表信息,不需要去检索服务，我自己就是服务注册中心。负责维护服务的实例
-    eureka-server-u-r-l-context:
-
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ # 设置对外暴露的地址，方便与eureka Server进行交互
