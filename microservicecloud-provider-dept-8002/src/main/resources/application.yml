@@ -5,7 +5,8 @@ eureka:
     register-with-eureka: true # 注册到注册中心
     fetch-registry: false # 作为服务的提供者，不需要从eureka中获取注册信息
   instance:
-    instance-id: dept-8002
+    instance-id: dept-8002 # 自定义服务名称信息
+    prefer-ip-address: true # 访问路径可以显示ip地址
 
 server:
   port: 8002
@@ -27,3 +28,9 @@ spring:
     host: 127.0.0.1
     port: 6379
     password: 123456
+
+info:
+  app.name: atguigu-microservicecloud
+  company.name: www.cloud_eureka.com
+  build.artifactId: ${project.artifactId}
+  build.version: ${project.version}
